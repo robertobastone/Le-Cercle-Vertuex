@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta name='mot-clef' content= "JavaScript,Français">
+		<meta name ="author" content = "Roberto Bastone">	
+		<title> Les cercles vertueux </title>
+	</head>
+    <body>
+		<h1> 
+			<b> 
+				<font face="verdana"> LES CERCLES VERTEUX </font> 
+			</b> 
+		</h1> 
+        <script src="présentation.js">
+        </script>
+		<h2> 
+			<b> 
+				<font face="verdana"> Le premier cercle </font> 
+				<br>
+					<form method="get" action="answer.html">
+					<br>
+						<font color="#000000"> Suivre l'évolution? 	<input type="radio" id="Oui" name="answer" value="Y">Oui
+																	<input type="radio" id="Non" name="answer" value="N" checked="checked">Non
+						</font>
+					<br>
+						<font color="#000000">	Choisir l'intervalle de temps: <input type="number" value="5000" name="timeInterval" min="0" max="10000"> ms
+					</form>
+				<br>
+					<canvas id="toile" width=500px height=500px style="border:1px solid #000000;"></canvas>
+					<script src="premierCercle.js">
+					</script>
+			</b> 
+		</h2> 
+    </body>
+</html>
