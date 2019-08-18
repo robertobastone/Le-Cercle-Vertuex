@@ -1,7 +1,14 @@
 body  
 {
-  border: 2px solid black;
-  padding: 25px;
-  background: url(seAgapoSmei.jpg);
-  background-size: cover;
+    border: 2px solid black;
+	padding: 25px;
+	background: url(seAgapoSmei.jpg);
+	background-size: cover;
+}
+
+h1
+{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, sans-serif;
+	font-style: oblique;
 }
