@@ -1,5 +1,8 @@
 const canvas = document.getElementById('toile');
 const context = canvas.getContext('2d');
+context.fillStyle = "#FFFFFF";
+context.fillRect(0, 0, canvas.width, canvas.height);
+
 const minimunWidth = canvas.width*0.001
 class Cercle 
 {
@@ -46,6 +49,7 @@ function doTheEvolution()
 	if (answer == "N")
 	{
 		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.fillRect(0, 0, canvas.width, canvas.height);
 	}
 	nouveauCercle.draw();
 	nouveauCercle.toChange();
