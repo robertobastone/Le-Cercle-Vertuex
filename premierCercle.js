@@ -3,7 +3,7 @@ const context = canvas.getContext('2d');
 context.fillStyle = "#FFFFFF";
 context.fillRect(0, 0, canvas.width, canvas.height);
 
-const minimunWidth = canvas.width*0.001
+const minimunWidth = canvas.width*0.005
 class Cercle 
 {
 	constructor(color,size)

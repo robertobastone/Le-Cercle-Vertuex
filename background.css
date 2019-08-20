@@ -3,7 +3,9 @@ body
     border: 2px solid black;
 	padding: 25px;
 	background: url(seAgapoSmei.jpg);
-	background-size: cover;
+	background-size: contain;
+	background-repeat: repeat-y;
+	color : white;
 }
 
 h1
@@ -11,4 +13,22 @@ h1
     font-size: xx-large;
     font-family: Verdana, Geneva, sans-serif;
 	font-style: oblique;
+	color : white;
+}
+
+h2
+{
+	color : white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

@@ -1,0 +1,4 @@
+Un cercle vertueux est un ensemble de cause à effet qui améliore le système entier.
+C'est l'inverse d'un cercle vicieux.
+
+Les deux cercles sont utilisés pour décrire une chaine des evenements qui se fortifie grace à un "feedback loop" (en français rétroaction).

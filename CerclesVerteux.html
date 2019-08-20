@@ -17,18 +17,48 @@
 			<b> 
 				<font face="verdana"> Le premier cercle </font> 
 				<br>
-					<form method="get" action="answer.html">
-					<br>
-						<font color="#000000"> Suivre l'évolution? 	<input type="radio" id="Oui" name="answer" value="Y">Oui
-																	<input type="radio" id="Non" name="answer" value="N" checked="checked">Non
-						</font>
-					<br>
-						<font color="#000000">	Choisir l'intervalle de temps: <input type="number" value="5000" name="timeInterval" min="0" max="10000"> ms
-					</form>
-				<br> <br>
-					<canvas id="toile" width=500px height=500px style="border:1px solid #000000;"></canvas>
-					<script src="premierCercle.js">
-					</script>
+					<div class="row">
+						<div class="column">
+							<form method="get" action="answer.html">
+							<br>
+								<font color="#FFFFFF"> Suivre l'évolution? 	<input type="radio" id="Oui" name="answer" value="Y">Oui
+																			<input type="radio" id="Non" name="answer" value="N" checked="checked">Non
+								</font>
+							<br>
+								<font color="#ffffff">	Choisir l'intervalle de temps: <input type="number" value="100" name="timeInterval" min="10" max="1000"> ms
+							</form>
+							<br> <br>
+							<canvas id="toile" width=500px height=500px style="border:1px solid #000000;"></canvas>
+							<script src="premierCercle.js">
+							</script>
+						</div>
+						<div class="column">
+							<br>
+							Un cercle vertueux est un ensemble de cause à effet qui améliore le système entier.
+							C'est l'inverse d'un cercle vicieux.
+							
+													
+							Les deux cercles sont utilisés pour décrire une chaine des evenements qui se fortifie grace à un <it> "feedback loop" </it> (en français rétroaction).
+						</div>
+					</div>
+			</b> 
+		</h2> 
+		<h2> 
+			<b> 
+				<font face="verdana"> Le deuxième cercle </font> 
+				<br>
+					<div class="row">
+						<div class="column">
+						<br>
+						Le cercle est parfait, immuable, sans commencement ni fin.
+						</div>
+						<div class="column">
+						<br> <br>
+							<canvas id="toile2" width=500px height=500px style="border:1px solid #000000;"></canvas>
+							<script src="deuxièmeCercle.js">
+							</script>
+						</div>
+					</div>
 			</b> 
 		</h2> 
     </body>
