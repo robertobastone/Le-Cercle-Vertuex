@@ -3,24 +3,24 @@ const context2 = canvas2.getContext('2d');
 context2.fillStyle = "#FFFFFF";
 context2.fillRect(0, 0, canvas2.width, canvas2.height);
 
-class Cercle2 
+class Cercle2
 {
 	constructor(color,size)
-	{ 	
+	{
 		this.x = canvas2.width*0.5
 		this.y = canvas2.height*0.5
 		this.color = color
 		this.change = "agrandir"
 		this.size = size
 	}
-								
+
 	draw()
 	{
 		context2.beginPath();
 		context2.arc(this.x, this.y, this.size, 0, 2*Math.PI);
 		context2.stroke();
 	}
-	
+
 	toMoveY(speed)
 	{
 		if( this.y > (canvas.width - this.size ))
@@ -60,7 +60,7 @@ class Cercle2
 			this.y += speed
 		}
 	}
-	
+
 	toMoveX(speed)
 	{
 		if( this.x > (canvas.width - this.size ))
@@ -80,7 +80,7 @@ class Cercle2
 			this.x += speed
 		}
 	}
-	
+
 	toMoveXopposite(speed)
 	{
 		if( this.x > (canvas.width - this.size ))
@@ -101,25 +101,25 @@ class Cercle2
 		}
 	}
 
-	
+
 	toMoveXY(xSpeed,ySpeed)
 	{
 		this.toMoveX(xSpeed);
 		this.toMoveY(ySpeed);
 	}
-	
+
 	toMoveXYopposite(xSpeed,ySpeed)
 	{
 		this.toMoveXopposite(xSpeed);
 		this.toMoveYopposite(ySpeed);
 	}
-	
+
 	toMoveXYcombo1(xSpeed,ySpeed)
 	{
 		this.toMoveX(xSpeed);
 		this.toMoveYopposite(ySpeed);
 	}
-	
+
 	toMoveXYcombo2(xSpeed,ySpeed)
 	{
 		this.toMoveY(ySpeed);
